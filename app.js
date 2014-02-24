@@ -18,13 +18,13 @@ function init() {
 
 
 
-    camera = new THREE.PerspectiveCamera( 85, width / height, 1, 10000);
+    camera = new THREE.PerspectiveCamera( 90, width / height, 1, 10000);
     camera.position.z = width;
 
     scene = new THREE.Scene();
 
     geometry = new THREE.CylinderGeometry( width, width, width*2, 60, 14, true);
-    material = new THREE.MeshBasicMaterial( { color: 0x0066ff, wireframe: true } );
+    material = new THREE.MeshBasicMaterial( { color: 0x0088ff, wireframe: true } );
 
     // create custom material from the shader code above
     //   that is within specially labeled script tags
@@ -61,7 +61,7 @@ function init() {
         color: 0x0000ff, transparent: false, blending: THREE.AdditiveBlending
       });
     var sprite = new THREE.Sprite( spriteMaterial );
-    sprite.scale.set(width, width, 1.0);
+    sprite.scale.set(width*2, width*2, 1.0);
     mesh.add(sprite);
 
 
