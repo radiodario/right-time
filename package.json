@@ -1,0 +1,37 @@
+{
+  "name": "right-time",
+  "version": "0.0.0",
+  "description": "it's the right time",
+  "scripts": {
+    "start": "grunt server",
+    "ghpages": "grunt ghpages"
+  },
+  "homepage": "http://github.com/radiodario/right-time",
+  "bugs": "http://github.com/radiodario/right-time/issues",
+  "author": {
+    "name": "Dario",
+    "email": "dario@alolo.co",
+    "url": "https://github.com/radiodario"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/radiodario/right-time.git"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-clean": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-connect": "",
+    "grunt-contrib-less": "",
+    "grunt-contrib-copy": "",
+    "grunt-contrib-watch": "",
+    "grunt-browserify": "~1.2.0",
+    "grunt-gh-pages": "~0.6.0",
+    "grunt-ejs": "~0.1.0",
+    "debowerify": "~0.1.3"
+  }
+}
