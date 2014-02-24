@@ -6,13 +6,18 @@ var geometry, material, mesh;
 
 var height, width, cover;
 
-init();
-animate();
+
+var cover = document.createElement('img');
+cover.onload = init.bind(this);
+cover.className = 'cover'
+cover.src = 'images/cover.png'
+document.body.appendChild(cover)
+
+
+
 
 function init() {
-
-    cover = document.querySelector('img.cover');
-
+    
     width  = cover.width - 1;
     height = cover.height;
 
@@ -64,11 +69,12 @@ function init() {
     sprite.scale.set(width*2, width*2, 1.0);
     mesh.add(sprite);
 
-
     renderer = new THREE.CanvasRenderer();
     renderer.setSize( width, height );
 
     document.body.appendChild( renderer.domElement );
+
+    animate();
 
 }
 
